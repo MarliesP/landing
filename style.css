@@ -1,0 +1,98 @@
+body {
+  font-family: Overpass;
+  color: grey;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  font-family: Chivo;
+}
+
+a {
+  color: lightblue;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+}
+
+header h1, header p {
+  color: white;
+}
+
+.button-blue {
+  background-color: #1A48E3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.button-blue:hover {
+  background-color: red;
+}
+
+article {
+  width: 400px;
+  margin: 20px auto;
+}
+
+.grid {
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-gap: 16px;
+}
+
+figure {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 400px;
+  text-align: center;
+  padding: 24px;
+  margin: 8px;
+}
+
+figure img {
+  width: 180px;
+ height: 180px;
+ object-fit: cover;
+ border-radius: 4px;
+}
+
+figcaption h3 {
+  margin-bottom: 0;
+}
+
+footer {
+  background: #404042;
+  text-align: center;
+  padding: 24px 0;
+}
+
+footer p {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  article {
+    width: 800px;
+  }
+
+  figure {
+    width: 200px;
+  }
+}
